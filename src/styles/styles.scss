@@ -1,0 +1,310 @@
+@import "./overrides";
+@import "../../node_modules/bulma/bulma";
+@import "../../node_modules/html5-device-mockups/dist/device-mockups";
+@import "./spacings";
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  color: #2e3c4d;
+  background-color: #f7f7f7;
+}
+
+.pm-hero {
+  @extend .hero;
+  background-image: url("../images/hero.jpg");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+
+  .large-title {
+    font-size: 40px;
+  }
+
+  .divider {
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.pm-features {
+  .feature-title {
+    display: flex;
+    align-items: center;
+
+    .feature-icon {
+      width: 80px;
+      height: 60px;
+      background-size: contain;
+      background-position: top center;
+      background-repeat: no-repeat;
+    }
+
+    .feature-icon-1 {
+      background-image: url("../images/icon-01.png");
+    }
+
+    .feature-icon-2 {
+      background-image: url("../images/icon-02.png");
+    }
+
+    .feature-icon-3 {
+      background-image: url("../images/icon-03.png");
+    }
+
+    .feature-icon-4 {
+      background-image: url("../images/icon-04.png");
+    }
+
+    .feature-icon-5 {
+      background-image: url("../images/icon-05.png");
+    }
+
+    .feature-icon-6 {
+      background-image: url("../images/icon-06.png");
+    }
+
+    .title {
+      flex: 1;
+    }
+  }
+}
+
+.pm-key-features {
+  .feature-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .feature-card-number {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: $white;
+    background-color: $primary;
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      top: 35px;
+      right: -20px;
+      border: 10px solid;
+      border-top-color: transparent;
+      border-bottom-color: transparent;
+      border-right-color: transparent;
+    }
+  }
+
+  .key-features-left {
+    .feature-card-number {
+      background-color: $primary;
+
+      &:before {
+        border-left-color: $primary;
+      }
+    }
+  }
+
+  .key-features-right {
+    .feature-card-number {
+      background-color: $primary-dark;
+
+      &:before {
+        border-left-color: $primary-dark;
+      }
+    }
+  }
+}
+
+.pm-improvements {
+  .parallax {
+    min-height: 600px;
+    background-image: url("../images/parallax.jpg");
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  ul {
+    margin-left: 0;
+  }
+
+  li {
+    list-style: none;
+    margin-bottom: 20px;
+
+    &:before {
+      content: "";
+      display: inline-block;
+
+      margin-right: 10px;
+      height: 18px;
+      width: 20px;
+      background-size: cover;
+      background-image: url("../images/right-arrow.svg");
+      background-position: left center;
+    }
+  }
+}
+
+.pm-value {
+  .device-wrapper {
+    max-width: 100%;
+
+    .device[data-device="MacbookPro"][data-orientation="portrait"][data-color="black"] {
+      background-image: url("../images/laptop-mock.png");
+    }
+
+    .content {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+
+      .slider {
+        width: 300%;
+        position: relative;
+        display: flex;
+        animation: slide 10s infinite;
+
+        img {
+          width: 33.333333%;
+        }
+      }
+    }
+  }
+}
+
+.pm-process {
+  .process-image-desktop {
+    display: none;
+  }
+
+  .process-image-mobile {
+    display: block;
+  }
+}
+
+.footer {
+  padding-bottom: 2em;
+  color: #BCBEC0;
+
+  ul {
+    list-style-type: none;
+    margin-left: 0;
+  }
+
+  a {
+    color: #BCBEC0;
+  }
+}
+
+.copiright {
+  color: #BCBEC0;
+  background-color: #1e1f21;
+  font-size: 16px;
+  padding: 1rem;
+  text-align: center;
+}
+
+@media screen and (min-width: $tablet) {
+  .pm-hero {
+    .large-title {
+      font-size: 60px;
+    }
+  }
+
+  .pm-key-features {
+    .feature-card {
+      background-color: $white;
+      margin-bottom: 40px;
+    }
+
+    .feature-card-text {
+      flex: 1;
+      padding: 5px 40px;
+    }
+  }
+
+  .pm-value {
+    .columns-reverse {
+      flex-direction: row-reverse;
+      display: flex;
+    }
+  }
+
+  .pm-process {
+    .process-image-desktop {
+      display: block;
+    }
+
+    .process-image-mobile {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: $widescreen) {
+  .pm-key-features {
+    .key-features-left {
+      margin-right: 20px;
+
+      .title {
+        text-align: right;
+      }
+
+      .feature-card {
+        flex-direction: row-reverse;
+      }
+
+      .feature-card-text {
+        text-align: right;
+      }
+
+      .feature-card-number {
+        &:before {
+          left: -20px;
+          border-left-color: transparent !important;
+          border-right-color: $primary !important;
+        }
+      }
+    }
+  }
+}
+
+@keyframes slide {
+  0% {
+    left: 0;
+  }
+
+  25% {
+    left: 0;
+  }
+
+  30% {
+    left: -100%;
+  }
+  55% {
+    left: -100%;
+  }
+
+  60% {
+    left: -200%;
+  }
+
+  85% {
+    left: -200%;
+  }
+
+  100% {
+    left: 0;
+  }
+}

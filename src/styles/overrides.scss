@@ -1,0 +1,16 @@
+@import "../../node_modules/bulma/sass/utilities/initial-variables";
+@import "../../node_modules/bulma/sass/utilities/functions";
+
+$primary: #71acdd;
+$primary-dark: #4a7393;
+$danger: #fc7795;
+$link: $primary;
+
+$navbar-background-color: $black;
+$navbar-item-color: $white;
+$navbar-item-hover-color: $primary;
+$navbar-item-active-color: $primary;
+$navbar-item-hover-background-color: $grey-darker;
+$navbar-burger-color: $primary;
+
+$footer-background-color: #58585A;

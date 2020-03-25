@@ -1,0 +1,28 @@
+{
+  "name": "obs2go",
+  "version": "1.0.0",
+  "description": "OBS2GO",
+  "main": "index.html",
+  "scripts": {
+    "build": "gulp build",
+    "dev": "gulp dev"
+  },
+  "keywords": [
+    "obs2go",
+    "applace"
+  ],
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-ejs": "^4.0.0",
+    "gulp-purgecss": "^1.1.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2"
+  },
+  "dependencies": {
+    "bulma": "^0.7.4",
+    "html5-device-mockups": "^3.2.1"
+  }
+}
