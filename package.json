@@ -22,7 +22,6 @@
     "gulp-sass": "^4.0.2"
   },
   "dependencies": {
-    "bulma": "^0.7.4",
-    "html5-device-mockups": "^3.2.1"
+    "bulma": "^0.7.4"
   }
 }

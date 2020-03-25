@@ -1,6 +1,5 @@
 @import "./overrides";
 @import "../../node_modules/bulma/bulma";
-@import "../../node_modules/html5-device-mockups/dist/device-mockups";
 @import "./spacings";
 
 body {
@@ -157,11 +156,23 @@ body {
 }
 
 .pm-value {
-  .device-wrapper {
+  .laptop-mock {
     max-width: 100%;
 
-    .device[data-device="MacbookPro"][data-orientation="portrait"][data-color="black"] {
+    .laptop {
+      position: relative;
+      padding-bottom: 57.94702%;
       background-image: url("../images/laptop-mock.png");
+      background-size: cover;
+
+      .screen {
+        position: absolute;
+        top: 6.71429%;
+        left: 11.83775%;
+        width: 76.40728%;
+        height: 82.42857%;
+        background-size: cover;
+      }
     }
 
     .content {
@@ -195,7 +206,7 @@ body {
 
 .footer {
   padding-bottom: 2em;
-  color: #BCBEC0;
+  color: #bcbec0;
 
   ul {
     list-style-type: none;
@@ -203,12 +214,12 @@ body {
   }
 
   a {
-    color: #BCBEC0;
+    color: #bcbec0;
   }
 }
 
 .copiright {
-  color: #BCBEC0;
+  color: #bcbec0;
   background-color: #1e1f21;
   font-size: 16px;
   padding: 1rem;

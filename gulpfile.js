@@ -10,7 +10,7 @@ const del = require('del');
 
 const paths = {
   pages: {
-    src: './src/pages/**/*.ejs',
+    src: './src/pages/*.ejs',
     dest: './dist'
   },
   styles: {
