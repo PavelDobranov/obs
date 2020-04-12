@@ -1,5 +1,42 @@
 @import "./base/common";
 
+body {
+  background-color: #f4fafe;
+}
+
+.text-image-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .text {
+    width: 49%;
+  }
+
+  .image {
+    width: 49%;
+    max-width: 100%;
+  }
+}
+
+.section-reversed {
+  flex-direction: row-reverse;
+}
+
+.ta-hero {
+  position: relative;
+  padding-bottom: 200px;
+  background: rgb(163, 202, 234);
+  background: linear-gradient(180deg, #a4cbea 0%, #ecf6fd 100%);
+
+  .clouds {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+  }
+}
+
 .ta-features {
   .feature-card {
     display: flex;
@@ -33,24 +70,66 @@
   }
 }
 
-.illustration {
-  width: 100%;
-  background-size: cover;
-  background-position: top center;
-  background-repeat: no-repeat;
+.ta-benefits {
+  ul li {
+    list-style: none;
+  }
+
+  ul li::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    margin-right: 15px;
+    background-color: $primary;
+    border-radius: 5px;
+  }
 }
 
-.ta-description {
-  .container {
+.ta-process {
+  .process-card {
+    padding: 3em;
+    height: 100%;
+  }
+}
+
+.ta-characteristic {
+  .mocks {
     display: flex;
+
+    .laptop {
+      flex: 1;
+    }
+
+    .phone {
+      width: 300px;
+      margin-left: -100px;
+      margin-top: 50px;
+    }
+  }
+}
+
+.ta-contact-us {
+  .kek {
+    display: flex;
+    justify-content: center;
     align-items: center;
-  }
 
-  .content {
-    flex: 1;
-  }
+    .large-title {
+      font-weight: 800;
+    }
 
-  .illustration {
-    flex: 1;
+    .text {
+      flex-basis: auto;
+    }
+
+    .image {
+      width: 270px;
+      max-width: 100%;
+    }
+
+    .p-l {
+      padding-left: 50px;
+    }
   }
 }

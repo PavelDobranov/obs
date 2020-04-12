@@ -6,7 +6,99 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
   color: #2e3c4d;
-  background-color: #f7f7f7;
+}
+
+.large-title {
+  @extend .title;
+  font-size: 60px;
+}
+
+.device-mock {
+  max-width: 100%;
+
+  .laptop {
+    position: relative;
+    padding-bottom: 57.94702%;
+    background-image: url("../images/laptop-mock.png");
+    background-size: cover;
+
+    .screen {
+      position: absolute;
+      top: 6.71429%;
+      left: 11.83775%;
+      width: 76.40728%;
+      height: 82.42857%;
+      background-size: cover;
+    }
+  }
+
+  .phone {
+    position: relative;
+    padding-bottom: 207.620164127%;
+    background-image: url("../images/phone-mock.png");
+    background-size: cover;
+
+    .screen {
+      position: absolute;
+      top: 12.2529644269%;
+      left: 6.0961313013%;
+      width: 88.0422039859%;
+      height: 75.3246753247%;
+      background-size: cover;
+    }
+  }
+
+  .content {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    .slider {
+      width: 300%;
+      position: relative;
+      display: flex;
+      animation: slide 20s infinite;
+
+      img {
+        width: 33.333333%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .large-title {
+    font-size: 60px;
+  }
+}
+
+@keyframes slide {
+  0% {
+    left: 0;
+  }
+
+  25% {
+    left: 0;
+  }
+
+  30% {
+    left: -100%;
+  }
+  55% {
+    left: -100%;
+  }
+
+  60% {
+    left: -200%;
+  }
+
+  85% {
+    left: -200%;
+  }
+
+  100% {
+    left: 0;
+  }
 }
 
 .footer {

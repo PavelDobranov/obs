@@ -1,15 +1,15 @@
 @import "./base/common";
 
+body {
+  background-color: #f7f7f7;
+}
+
 .pm-hero {
   @extend .hero;
   background-image: url("../images/pm-module/hero.jpg");
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
-
-  .large-title {
-    font-size: 40px;
-  }
 
   .divider {
     width: 100px;
@@ -146,45 +146,6 @@
   }
 }
 
-.pm-value {
-  .laptop-mock {
-    max-width: 100%;
-
-    .laptop {
-      position: relative;
-      padding-bottom: 57.94702%;
-      background-image: url("../images/pm-module/laptop-mock.png");
-      background-size: cover;
-
-      .screen {
-        position: absolute;
-        top: 6.71429%;
-        left: 11.83775%;
-        width: 76.40728%;
-        height: 82.42857%;
-        background-size: cover;
-      }
-    }
-
-    .content {
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-
-      .slider {
-        width: 300%;
-        position: relative;
-        display: flex;
-        animation: slide 20s infinite;
-
-        img {
-          width: 33.333333%;
-        }
-      }
-    }
-  }
-}
-
 .pm-process {
   .process-image-desktop {
     display: none;
@@ -196,12 +157,6 @@
 }
 
 @media screen and (min-width: $tablet) {
-  .pm-hero {
-    .large-title {
-      font-size: 60px;
-    }
-  }
-
   .pm-key-features {
     .feature-card {
       background-color: $white;
@@ -257,34 +212,5 @@
         }
       }
     }
-  }
-}
-
-@keyframes slide {
-  0% {
-    left: 0;
-  }
-
-  25% {
-    left: 0;
-  }
-
-  30% {
-    left: -100%;
-  }
-  55% {
-    left: -100%;
-  }
-
-  60% {
-    left: -200%;
-  }
-
-  85% {
-    left: -200%;
-  }
-
-  100% {
-    left: 0;
   }
 }
