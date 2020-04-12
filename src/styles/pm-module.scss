@@ -1,17 +1,8 @@
-@import "./overrides";
-@import "../../node_modules/bulma/bulma";
-@import "./spacings";
-
-body {
-  font-family: "Open Sans", sans-serif;
-  font-size: 18px;
-  color: #2e3c4d;
-  background-color: #f7f7f7;
-}
+@import "./base/common";
 
 .pm-hero {
   @extend .hero;
-  background-image: url("../images/hero.jpg");
+  background-image: url("../images/pm-module/hero.jpg");
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
@@ -41,27 +32,27 @@ body {
     }
 
     .feature-icon-1 {
-      background-image: url("../images/icon-01.png");
+      background-image: url("../images/pm-module/icon-01.png");
     }
 
     .feature-icon-2 {
-      background-image: url("../images/icon-02.png");
+      background-image: url("../images/pm-module/icon-02.png");
     }
 
     .feature-icon-3 {
-      background-image: url("../images/icon-03.png");
+      background-image: url("../images/pm-module/icon-03.png");
     }
 
     .feature-icon-4 {
-      background-image: url("../images/icon-04.png");
+      background-image: url("../images/pm-module/icon-04.png");
     }
 
     .feature-icon-5 {
-      background-image: url("../images/icon-05.png");
+      background-image: url("../images/pm-module/icon-05.png");
     }
 
     .feature-icon-6 {
-      background-image: url("../images/icon-06.png");
+      background-image: url("../images/pm-module/icon-06.png");
     }
 
     .title {
@@ -126,7 +117,7 @@ body {
 .pm-improvements {
   .parallax {
     min-height: 600px;
-    background-image: url("../images/parallax.jpg");
+    background-image: url("../images/pm-module/parallax.jpg");
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
@@ -149,7 +140,7 @@ body {
       height: 18px;
       width: 20px;
       background-size: cover;
-      background-image: url("../images/right-arrow.svg");
+      background-image: url("../images/pm-module/right-arrow.svg");
       background-position: left center;
     }
   }
@@ -162,7 +153,7 @@ body {
     .laptop {
       position: relative;
       padding-bottom: 57.94702%;
-      background-image: url("../images/laptop-mock.png");
+      background-image: url("../images/pm-module/laptop-mock.png");
       background-size: cover;
 
       .screen {
@@ -202,28 +193,6 @@ body {
   .process-image-mobile {
     display: block;
   }
-}
-
-.footer {
-  padding-bottom: 2em;
-  color: #bcbec0;
-
-  ul {
-    list-style-type: none;
-    margin-left: 0;
-  }
-
-  a {
-    color: #bcbec0;
-  }
-}
-
-.copiright {
-  color: #bcbec0;
-  background-color: #1e1f21;
-  font-size: 16px;
-  padding: 1rem;
-  text-align: center;
 }
 
 @media screen and (min-width: $tablet) {

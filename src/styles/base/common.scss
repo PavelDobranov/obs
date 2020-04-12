@@ -1,0 +1,32 @@
+@import "./overrides";
+@import "../../../node_modules/bulma/bulma";
+@import "./spacings";
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  color: #2e3c4d;
+  background-color: #f7f7f7;
+}
+
+.footer {
+  padding-bottom: 2em;
+  color: #bcbec0;
+
+  ul {
+    list-style-type: none;
+    margin-left: 0;
+  }
+
+  a {
+    color: #bcbec0;
+  }
+}
+
+.copiright {
+  color: #bcbec0;
+  background-color: #1e1f21;
+  font-size: 16px;
+  padding: 1rem;
+  text-align: center;
+}

@@ -1,0 +1,56 @@
+@import "./base/common";
+
+.ta-features {
+  .feature-card {
+    display: flex;
+
+    .feature-icon {
+      width: 90px;
+      background-size: contain;
+      background-position: top center;
+      background-repeat: no-repeat;
+    }
+
+    .feature-icon-1 {
+      background-image: url("../images/ta-module/illustration3-icon1.svg");
+    }
+
+    .feature-icon-2 {
+      background-image: url("../images/ta-module/illustration3-icon2.svg");
+    }
+
+    .feature-icon-3 {
+      background-image: url("../images/ta-module/illustration3-icon3.svg");
+    }
+
+    .feature-icon-4 {
+      background-image: url("../images/ta-module/illustration3-icon4.svg");
+    }
+
+    .content {
+      flex: 1;
+    }
+  }
+}
+
+.illustration {
+  width: 100%;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.ta-description {
+  .container {
+    display: flex;
+    align-items: center;
+  }
+
+  .content {
+    flex: 1;
+  }
+
+  .illustration {
+    flex: 1;
+  }
+}
