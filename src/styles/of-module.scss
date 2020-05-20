@@ -172,6 +172,44 @@
       font-weight: bold;
     }
   }
+
+  .carousel-wrapper {
+    position: relative;
+
+    .carousel {
+      width: 80%;
+      margin: 0 auto;
+      overflow: hidden;
+
+      .carousel-slides {
+        display: flex;
+      }
+
+      .carousel-slide {
+        min-width: 100%;
+      }
+    }
+
+    .carousel-control {
+      position: absolute;
+      width: 26px;
+      height: 52px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-size: contain;
+      cursor: pointer;
+    }
+
+    .carousel-control-left {
+      left: 0;
+      background-image: url("../images/of-module/left-arrow.svg");
+    }
+
+    .carousel-control-right {
+      right: 0;
+      background-image: url("../images/of-module/right-arrow.svg");
+    }
+  }
 }
 
 @media screen and (min-width: $tablet) {
