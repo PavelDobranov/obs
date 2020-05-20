@@ -4,17 +4,6 @@ body {
   background-color: #f4fafe;
 }
 
-.text-image-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-
-  .text {
-    padding-bottom: 2em;
-  }
-}
-
 .ta-hero {
   position: relative;
   padding-bottom: 50px;
@@ -123,8 +112,6 @@ body {
 
 @media screen and (min-width: $tablet) {
   .text-image-section {
-    flex-direction: row;
-
     .text {
       width: 49%;
     }
@@ -132,10 +119,6 @@ body {
     .image {
       width: 49%;
     }
-  }
-
-  .section-reversed {
-    flex-direction: row-reverse;
   }
 
   .ta-hero {

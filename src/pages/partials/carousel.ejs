@@ -1,0 +1,56 @@
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const $carouselSlidesContainer = document.querySelector('.carousel-slides');
+
+    const $firstClone = $carouselSlidesContainer.firstElementChild.cloneNode(true);
+    const $lastClone = $carouselSlidesContainer.lastElementChild.cloneNode(true);
+
+    $carouselSlidesContainer.appendChild($firstClone);
+    $carouselSlidesContainer.insertBefore($lastClone, $carouselSlidesContainer.firstElementChild);
+
+    const $carouselSlides = Array.prototype.slice.call(document.querySelectorAll('.carousel-slide'), 0);
+    const $nextButton = document.querySelector('.carousel-control-right');
+    const $prevButton = document.querySelector('.carousel-control-left');
+
+    let activeIndex = 1;
+
+    function getSliderPosition(index) {
+      const size = $carouselSlides[0].clientWidth;
+      return -size * index;
+    }
+
+    function slideTo(opts) {
+      $carouselSlidesContainer.style.transition = opts.animate ? 'transform 0.4s ease-in-out' : 'none';
+      $carouselSlidesContainer.style.transform = 'translateX(' + opts.position + 'px)';
+    }
+
+    slideTo({ position: getSliderPosition(activeIndex), animate: false });
+
+    window.addEventListener('resize', function () {
+      slideTo({ position: getSliderPosition(activeIndex), animate: false });
+    });
+
+    $nextButton.addEventListener('click', function () {
+      console.log('click')
+      activeIndex++;
+      slideTo({ animate: true, position: getSliderPosition(activeIndex) });
+    });
+
+    $prevButton.addEventListener('click', function () {
+      activeIndex--;
+      slideTo({ animate: true, position: getSliderPosition(activeIndex) });
+    });
+
+    $carouselSlidesContainer.addEventListener('transitionend', function () {
+      if (activeIndex === $carouselSlides.length - 1) {
+        activeIndex = 1;
+        slideTo({ animate: false, position: getSliderPosition(activeIndex) });
+      }
+
+      if (activeIndex === 0) {
+        activeIndex = $carouselSlides.length - 2;
+        slideTo({ aanimate: false, position: getSliderPosition(activeIndex) });
+      }
+    });
+  });
+</script>
