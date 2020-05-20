@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   height="1342.597"
+   width="505.69891"
+   sodipodi:docname="service-description-shape.svg"
+   xml:space="preserve"
+   viewBox="0 0 505.69891 1342.597"
+   y="0px"
+   x="0px"
+   id="Layer_1"
+   version="1.1"><metadata
+   id="metadata11"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+   id="defs9"><clipPath
+     id="clipPath39"
+     clipPathUnits="userSpaceOnUse"><rect
+       y="-184.37086"
+       x="451.39072"
+       height="1707.0199"
+       width="603.97351"
+       id="rect41"
+       style="opacity:0.4;fill:#ff0000" /></clipPath></defs><sodipodi:namedview
+   fit-margin-bottom="0"
+   fit-margin-right="0"
+   fit-margin-left="0"
+   fit-margin-top="0"
+   inkscape:current-layer="Layer_1"
+   inkscape:window-maximized="0"
+   inkscape:window-y="-21"
+   inkscape:window-x="99"
+   inkscape:cy="749.20766"
+   inkscape:cx="459.41412"
+   inkscape:zoom="0.31458333"
+   showgrid="false"
+   id="namedview7"
+   inkscape:window-height="1262"
+   inkscape:window-width="1200"
+   inkscape:pageshadow="2"
+   inkscape:pageopacity="0"
+   guidetolerance="10"
+   gridtolerance="10"
+   objecttolerance="10"
+   borderopacity="1"
+   bordercolor="#666666"
+   pagecolor="#ffffff" />
+<style
+   id="style2"
+   type="text/css">
+	.st0{fill:#EAF4FF;}
+</style>
+<path
+   transform="translate(-549.66532,36.663127)"
+   clip-path="url(#clipPath39)"
+   id="path4"
+   d="M 1343.5777,1054.1122 C 1436.4363,666.37655 1196.2006,520.64726 1186.8304,152.73733 1181.8476,-42.769639 1009.9391,-120.35121 913.2568,83.095985 862.64293,189.58635 874.86128,329.1192 829.28001,440.22869 773.95834,575.09287 665.8405,663.64712 598.84185,795.74568 c -66.98889,132.10077 -70.00249,218.32002 18.75936,340.04012 163.40473,224.0798 645.16599,255.7547 725.97649,-81.6736 z"
+   class="st0" />
+</svg>
