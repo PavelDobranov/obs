@@ -26,11 +26,11 @@
     margin-bottom: 50px;
 
     .benefit-icon {
-      min-width: 90px;
+      min-width: 60px;
       background-size: contain;
       background-position: top center;
       background-repeat: no-repeat;
-      margin: 0 20px;
+      margin-right: 20px;
     }
 
     .benefit-icon-1 {
@@ -63,6 +63,14 @@
   position: relative;
   overflow: visible;
 
+  .title {
+    text-align: center;
+  }
+
+  .content > ul {
+    margin: 0;
+  }
+
   .shape {
     width: 95%;
     top: 0;
@@ -73,6 +81,14 @@
 .of-service-description {
   position: relative;
   overflow: visible;
+
+  .title {
+    text-align: center;
+  }
+
+  .content > ul {
+    margin: 0;
+  }
 
   .shape {
     width: 60%;
@@ -180,6 +196,13 @@
   }
 
   .of-benefits {
+    .benefit-card {
+      .benefit-icon {
+        min-width: 90px;
+        margin: 0 20px;
+      }
+    }
+
     .benefit-card-reversed {
       flex-direction: row-reverse;
 
@@ -190,12 +213,20 @@
   }
 
   .of-general-information {
+    .title {
+      text-align: left;
+    }
+
     .shape {
       width: 50%;
     }
   }
 
   .of-service-description {
+    .title {
+      text-align: left;
+    }
+
     .shape {
       width: 50%;
       bottom: -120px;

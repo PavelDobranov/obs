@@ -13,6 +13,7 @@
     const $prevButton = document.querySelector('.carousel-control-left');
 
     let activeIndex = 1;
+    let ongoingTransition = false;
 
     function getSliderPosition(index) {
       const size = $carouselSlides[0].clientWidth;
@@ -20,6 +21,8 @@
     }
 
     function slideTo(opts) {
+      ongoingTransition = opts.animate;
+
       $carouselSlidesContainer.style.transition = opts.animate ? 'transform 0.4s ease-in-out' : 'none';
       $carouselSlidesContainer.style.transform = 'translateX(' + opts.position + 'px)';
     }
@@ -31,16 +34,23 @@
     });
 
     $nextButton.addEventListener('click', function () {
-      activeIndex++;
-      slideTo({ animate: true, position: getSliderPosition(activeIndex) });
+      if (!ongoingTransition) {
+        activeIndex++;
+        slideTo({ animate: true, position: getSliderPosition(activeIndex) });
+      }
     });
 
     $prevButton.addEventListener('click', function () {
-      activeIndex--;
-      slideTo({ animate: true, position: getSliderPosition(activeIndex) });
+      if (!ongoingTransition) {
+        activeIndex--;
+        slideTo({ animate: true, position: getSliderPosition(activeIndex) });
+      }
     });
 
     $carouselSlidesContainer.addEventListener('transitionend', function () {
+      console.log('transitionend')
+      ongoingTransition = false;
+
       if (activeIndex === $carouselSlides.length - 1) {
         activeIndex = 1;
         slideTo({ animate: false, position: getSliderPosition(activeIndex) });
